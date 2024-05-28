@@ -518,8 +518,9 @@ button:focus {
 }
 
 .menu-bg {
-  background: -webkit-linear-gradient(left, #3c96ff 0%, #2dfbff 100%) !important;
-  background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%) !important;
+  /* background: -webkit-linear-gradient(left, #3c96ff 0%, #2dfbff 100%) !important; */
+  /* background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%) !important; */
+  background: linear-gradient(to right, #06C755 0%, #06C755 100%) !important;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   padding: 5px;
@@ -688,9 +689,10 @@ button:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  /* background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
   background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%); */
+  background-image: linear-gradient(0deg, #06C755 0%, #06C755 100%);
 }
 
 .hero-area-2 .contents {
@@ -806,7 +808,8 @@ button:focus {
     download
    ========================================================================== */
 #download {
-  background: #f6fbfd;
+  /* background: #f6fbfd; */
+  background: #fff;
   padding: 80px 0 0px;
 }
 
@@ -1191,7 +1194,8 @@ button:focus {
  Screens Section Start
  ========================================================================== */
 .screens-shot {
-  background: #f6fbfd;
+  /* background: #f6fbfd; */
+  background: #E8F5E9;
 }
 
 #screens .owl-controls .owl-buttons {
@@ -2146,10 +2150,12 @@ textarea {
 }
 
 footer .footer-Content {
-  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  /* background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
   background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  padding: 60px 0 0px;
+  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%); */
+  background-image: linear-gradient(0deg, #06C755 0%, #06C755 100%);
+
+  /* padding: 60px 0 0px; */
   color: #546E7A;
 }
 
