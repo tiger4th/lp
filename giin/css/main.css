@@ -30,12 +30,45 @@ Domain Path:      /languages/
 /* ==========================================================================
    IMPORT GOOGLE FONTS
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto");
+/* @import url("https://fonts.googleapis.com/css?family=LINE Seed:400,600|Roboto"); */
+
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/LINESeedJP_OTF_Th.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/LINESeedJP_OTF_Rg.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/LINESeedJP_OTF_Bd.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'LINE Seed';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/LINESeedJP_OTF_Eb.woff2") format("woff2");
+}
+
 /* ==========================================================================
    GENERAL
    ========================================================================== */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'LINE Seed', 'Roboto', sans-serif;
   color: #a0a6ad;
   font-size: 14px;
   font-weight: 400;
@@ -51,7 +84,7 @@ p {
   font-size: 14px;
   color: #a0a6ad;
   line-height: 26px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'LINE Seed', 'Roboto', sans-serif;
   margin-bottom: 0;
 }
 
@@ -68,7 +101,7 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LINE Seed', sans-serif;
   font-size: 40px;
   font-weight: 700;
   color: #191c1e;
@@ -122,7 +155,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .section-header .section-title {
   font-size: 30px;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LINE Seed', sans-serif;
   font-weight: 600;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -142,7 +175,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   font-size: 14px;
   padding: 10px 30px;
   border-radius: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LINE Seed', sans-serif;
   letter-spacing: 1px;
   font-weight: 600;
   color: #fff;
@@ -291,7 +324,7 @@ button:focus {
 
 .btn-subtitle {
   color: #191c1e;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LINE Seed', sans-serif;
   background: #dbecff;
   text-align: center;
   border-radius: 30px;
@@ -556,7 +589,7 @@ button:focus {
   font-size: 15px;
   padding: 5px 0px;
   margin-left: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LINE Seed', sans-serif;
   position: relative;
 }
 
