@@ -758,12 +758,14 @@ button:focus {
 }
 
 .hero-area-2 .intro-img {
-  padding: 180px 0 0px;
+  /* padding: 180px 0 0px; */
+  padding: 100px 0 20px;
+  text-align: center;
 }
 
 .hero-area-2 .intro-img img {
-  display: block;
-  height: auto;
+  /* display: block; */
+  /* height: auto; */
   max-width: 100%;
 }
 
