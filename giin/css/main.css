@@ -734,16 +734,20 @@ button:focus {
 
 .hero-area-2 .contents h2 {
   color: #fff;
-  font-size: 42px;
-  line-height: 60px;
+  /* font-size: 42px; */
+  font-size: 80px;
+  /* line-height: 60px; */
   margin-bottom: 25px;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: 100;
 }
 
 .hero-area-2 .contents p {
   color: #fff;
-  font-size: 14px;
-  line-height: 26px;
+  /* font-size: 14px; */
+  font-size: 40px;
+  /* line-height: 26px; */
+  font-weight: 100;
 }
 
 .hero-area-2 .contents .btn {
