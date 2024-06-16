@@ -854,8 +854,10 @@ button:focus {
    ========================================================================== */
 #download {
   /* background: #f6fbfd; */
-  background: #fff;
-  padding: 80px 0 0px;
+  /* background: #fff; */
+  background: #E8F5E9;
+  /* padding: 80px 0 0px; */
+  padding: 80px 0;
 }
 
 #download .download-wrapper {
@@ -1241,7 +1243,8 @@ button:focus {
  ========================================================================== */
 .screens-shot {
   /* background: #f6fbfd; */
-  background: #E8F5E9;
+  /* background: #E8F5E9; */
+  background: #fff;
 }
 
 #screens .owl-controls .owl-buttons {
