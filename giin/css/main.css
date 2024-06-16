@@ -91,11 +91,13 @@ p {
 }
 
 a:hover, a:focus {
-  color: #3c9cfd;
+  /* color: #3c9cfd; */
+  color: #fff;
 }
 
 a {
-  color: #3c9cfd;
+  /* color: #3c9cfd; */
+  color: #06C755;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -535,7 +537,8 @@ button:focus {
 }
 
 .back-to-top i {
-  background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%);
+  /* background: linear-gradient(to right, #3c96ff 0%, #2dfbff 100%); */
+  background: linear-gradient(to right, #06C755 0%, #06C755 100%);
   -webkit-background-clip: text;
   font-size: 20px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -558,7 +561,7 @@ button:focus {
   background: linear-gradient(to right, #06C755 0%, #06C755 100%) !important;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
   z-index: 9999;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .menu-bg .menu-button {
@@ -1484,7 +1487,8 @@ button:focus {
 }
 
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background: #3c9cfd;
+  /* background: #3c9cfd; */
+  background: #06C755;
 }
 
 /* ==========================================================================
@@ -2402,6 +2406,24 @@ footer .menu li a:hover {
   font-size: 14px;
 }
 
+
+/* ==========================================================================
+ 追加スタイル
+ ========================================================================== */
+@media (min-width: 1040px) {
+  .container {
+    min-width: 1024px;
+  }
+}
+.navbar {
+  background-color: #06C755;
+}
+.head-title {
+  white-space: nowrap;
+}
+.head-app-name {
+  white-space: nowrap;
+}
 .btn-app {
   background-color: #000;
   border-radius: 10px;
@@ -2448,14 +2470,16 @@ footer .menu li a:hover {
   font-weight: 400;
 
   a {
-    color: #06C755 ;
+    color: #06C755;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .header-button {
     text-align: center;
   }
+}
+@media (max-width: 480px) {
   .download-app {
     text-align: center;
   }

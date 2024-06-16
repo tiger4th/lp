@@ -105,13 +105,13 @@
   /* 
    Sticky Nav
    ========================================================================== */
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 100) {
-            $('.header-top-area').addClass('menu-bg');
-        } else {
-            $('.header-top-area').removeClass('menu-bg');
-        }
-    });
+    // $(window).on('scroll', function() {
+    //     if ($(window).scrollTop() > 100) {
+    //         $('.header-top-area').addClass('menu-bg');
+    //     } else {
+    //         $('.header-top-area').removeClass('menu-bg');
+    //     }
+    // });
 
   /* 
  VIDEO POP-UP
@@ -160,7 +160,7 @@
         });
 
         $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 100) {
+            if ($(window).scrollTop() > 50) {
                 $('.fixed-top').addClass('menu-bg');
             } else {
                 $('.fixed-top').removeClass('menu-bg');
