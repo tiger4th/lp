@@ -491,7 +491,8 @@ button:focus {
   height: 100%;
   border-radius: 100%;
   border: 7px solid transparent;
-  border-top-color: #3c9cfd;
+  /* border-top-color: #3c9cfd; */
+  border-top-color: #06C755;
 }
 
 #loader-1:before {
