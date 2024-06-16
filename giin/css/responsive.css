@@ -417,7 +417,8 @@
     font-size: 11px;
   }
   #download .download-wrapper {
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
+    padding: 30px 0px;
   }
   #download .download-wrapper h4 {
     font-size: 14px;

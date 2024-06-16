@@ -9,14 +9,14 @@
   /* 
   CounterUp
   ========================================================================== */
-  $('.counter').counterUp({
-    time: 500
-  });  
+  // $('.counter').counterUp({
+  //   time: 500
+  // });  
   
   /* 
   MixitUp
   ========================================================================== */
-  $('#portfolio').mixItUp();
+  // $('#portfolio').mixItUp();
 
   /* 
    Screens Crouserl
@@ -34,38 +34,38 @@
   /* 
    Clients Sponsor 
    ========================================================================== */
-    var owl = $("#clients-scroller");
-    owl.owlCarousel({
-      items:5,
-      itemsTablet:3,
-      margin:90,
-      stagePadding:90,
-      smartSpeed:450,
-      itemsDesktop : [1199,4],
-      itemsDesktopSmall : [980,3],
-      itemsTablet: [768,3],
-      itemsTablet: [767,2],
-      itemsTabletSmall: [480,2],
-      itemsMobile : [479,1],
-    });
+    // var owl = $("#clients-scroller");
+    // owl.owlCarousel({
+    //   items:5,
+    //   itemsTablet:3,
+    //   margin:90,
+    //   stagePadding:90,
+    //   smartSpeed:450,
+    //   itemsDesktop : [1199,4],
+    //   itemsDesktopSmall : [980,3],
+    //   itemsTablet: [768,3],
+    //   itemsTablet: [767,2],
+    //   itemsTabletSmall: [480,2],
+    //   itemsMobile : [479,1],
+    // });
 
   /* Testimonials Carousel 
   ========================================================*/
-  var owl = $("#testimonials");
-    owl.owlCarousel({
-      navigation: false,
-      pagination: true,
-      slideSpeed: 1000,
-      stopOnHover: true,
-      autoPlay: true,
-      items: 1,
-      itemsDesktop : [1199,1],
-      itemsDesktopSmall : [980,1],
-      itemsTablet: [768,1],
-      itemsTablet: [767,1],
-      itemsTabletSmall: [480,1],
-      itemsMobile : [479,1],
-    });   
+  // var owl = $("#testimonials");
+  //   owl.owlCarousel({
+  //     navigation: false,
+  //     pagination: true,
+  //     slideSpeed: 1000,
+  //     stopOnHover: true,
+  //     autoPlay: true,
+  //     items: 1,
+  //     itemsDesktop : [1199,1],
+  //     itemsDesktopSmall : [980,1],
+  //     itemsTablet: [768,1],
+  //     itemsTablet: [767,1],
+  //     itemsTabletSmall: [480,1],
+  //     itemsMobile : [479,1],
+  //   });   
 
   /* 
    Touch Owl Carousel
@@ -88,19 +88,19 @@
 
     /* Screens Shot Slider
     =============================*/
-     var owl = $(".screens-slider");
-      owl.owlCarousel({
-        navigation: false,
-        pagination: true,
-        slideSpeed: 1000,
-        stopOnHover: true,
-        autoPlay: true,
-        addClassActive: true,
-        items: 3,
-        itemsDesktopSmall: [1024, 3],
-        itemsTablet: [600, 1],
-        itemsMobile: [479, 1]
-      });
+    //  var owl = $(".screens-slider");
+    //   owl.owlCarousel({
+    //     navigation: false,
+    //     pagination: true,
+    //     slideSpeed: 1000,
+    //     stopOnHover: true,
+    //     autoPlay: true,
+    //     addClassActive: true,
+    //     items: 3,
+    //     itemsDesktopSmall: [1024, 3],
+    //     itemsTablet: [600, 1],
+    //     itemsMobile: [479, 1]
+    //   });
 
   /* 
    Sticky Nav
@@ -116,14 +116,14 @@
   /* 
  VIDEO POP-UP
  ========================================================================== */
-  $('.video-popup').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false,
-  });
+  // $('.video-popup').magnificPopup({
+  //     disableOn: 700,
+  //     type: 'iframe',
+  //     mainClass: 'mfp-fade',
+  //     removalDelay: 160,
+  //     preloader: false,
+  //     fixedContentPos: false,
+  // });
 
   /* 
    Back Top Link
@@ -186,10 +186,10 @@
 
   /* Nivo Lightbox
   ========================================================*/   
-   $('.lightbox').nivoLightbox({
-    effect: 'fadeScale',
-    keyboardNav: true,
-  });
+  //  $('.lightbox').nivoLightbox({
+  //   effect: 'fadeScale',
+  //   keyboardNav: true,
+  // });
 
 }(jQuery));
 
