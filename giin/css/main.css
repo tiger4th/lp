@@ -1997,25 +1997,31 @@ textarea {
   margin-bottom: 0;
 }
 
-#contact {
+#contact,
+#contact2 {
   background: #ffffff;
   padding-bottom: 80px;
   position: relative;
   text-align: center;
 }
 
-#contact h2 {
-  font-size: 30px;
-  font-weight: 700;
+#contact h2,
+#contact2 h2 {
+  /* font-size: 30px; */
+  font-size: 26px;
+  /* font-weight: 700; */
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
-#contact .contact-block {
+#contact .contact-block,
+#contact2 .contact-block {
   background: #ffffff;
   overflow: hidden;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.23);
+  /* box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.23); */
+  border: 1px solid #06C755;
 }
 
 .offset-top {
