@@ -90,19 +90,17 @@ p {
   margin-bottom: 0;
 }
 
-a:hover, a:focus {
-  /* color: #3c9cfd; */
-  color: #fff;
-}
+/* a:hover, a:focus {
+  color: #3c9cfd;
+} */
 
-a {
-  /* color: #3c9cfd; */
-  color: #06C755;
+/* a {
+  color: #3c9cfd;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+} */
 
 h2, h3, h4, h5 {
   font-family: 'LINE Seed', sans-serif;
