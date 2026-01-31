@@ -184,6 +184,12 @@
   close_toggle();
   $(window).resize(close_toggle);
 
+  /* 
+   Update Current Year
+   ========================================================================== */
+   var currentYear = new Date().getFullYear();
+   $('#current-year').text(currentYear);
+
   /* Nivo Lightbox
   ========================================================*/   
   //  $('.lightbox').nivoLightbox({
