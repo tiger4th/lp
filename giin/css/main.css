@@ -144,6 +144,10 @@ a:not([href]):not([tabindex]):hover {
   background: #3c9cfd !important;
 }
 
+.text-primary {
+  color: #8C52FF !important;
+}
+
 /* ==========================================================================
    Section Title
    ========================================================================== */
@@ -167,10 +171,10 @@ a:not([href]):not([tabindex]):hover {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  background-color: #2dfbff;
-  background-image: -webkit-linear-gradient(bottom right, #3c96ff, #2dfbff);
-  background-image: -o-linear-gradient(bottom right, #3c96ff, #2dfbff);
-  background-image: linear-gradient(to top left, #3c96ff, #2dfbff);
+  background-color: #8C52FF;
+  background-image: -webkit-linear-gradient(bottom right, #8C52FF, #8C52FF);
+  background-image: -o-linear-gradient(bottom right, #8C52FF, #8C52FF);
+  background-image: linear-gradient(to top left, #8C52FF, #8C52FF);
   position: relative;
 }
 
@@ -2563,4 +2567,39 @@ footer .menu li a:hover {
       font-size: 10px;
     }
   }
+}
+
+/* ==========================================================================
+ 追加セクション
+ ========================================================================== */
+
+/* ==========================================================================
+    download2
+   ========================================================================== */
+#download2 {
+  background: #8C52FF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#download2 .btn-app {
+  margin: 10px;
+}
+
+/* ==========================================================================
+    about-giin
+   ========================================================================== */
+#about-giin {
+  padding-bottom: 0;
+}
+
+#about-giin a {
+  color: #8C52FF;
+}
+
+/* ==========================================================================
+    popular-politicians
+   ========================================================================== */
+#popular-politicians {
+  padding-bottom: 80px;
 }
