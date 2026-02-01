@@ -18,20 +18,109 @@
   <meta property="og:image" content="https://tiger4th.com/lp/giin/img/download.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@giin_app">
+  <meta name="theme-color" content="#8C52FF">
   <link rel="canonical" href="https://tiger4th.com/lp/giin/">
   <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!-- SoftwareApplication 構造化データ -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "GIIN（ギイン）",
+      "name": "GIIN",
+      "alternateName": "ギイン",
+      "description": "議員やワードをフォローして国会議事録の発言を読むことができるアプリ。メディアやSNSに切り取られた情報ではない、生の発言をチャットアプリのような感覚で閲覧可能。AIによる要約機能搭載。",
       "operatingSystem": "iOS, Android, Web",
-      "applicationCategory": "NewsApplication, EducationalApplication",
+      "applicationCategory": ["NewsApplication", "EducationalApplication"],
+      "url": "https://tiger4th.com/lp/giin/",
+      "image": "https://tiger4th.com/lp/giin/img/icon.png",
+      "screenshot": [
+        "https://tiger4th.com/lp/giin/img/screenshot/img-1.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-2.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-3.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-4.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-5.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-6.jpg"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "tiger4th",
+        "url": "https://tiger4th.com/"
+      },
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "JPY"
-      }
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/jp/app/id6758155810",
+        "https://play.google.com/store/apps/details?id=com.tiger4th.giin"
+      ],
+      "featureList": [
+        "議員フォロー機能",
+        "キーワードフォロー機能",
+        "チャット形式の議事録表示",
+        "AI要約機能",
+        "1947年からの全会議アーカイブ"
+      ],
+      "inLanguage": "ja"
+    }
+  </script>
+
+  <!-- FAQ 構造化データ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "GIINとは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GIIN（ギイン）は、議員やキーワードをフォローして、国会での議論をチャット形式で手軽に読める国会議事録・政治学習アプリです。AIによる要約機能も搭載しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "GIINは無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、GIINは完全無料で会員登録も不要でご利用いただけます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "過去の国会議事録はどこまで見られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1947年5月の第1回国会から、最新の国会まで全ての会議を収録しています。最新の会議は、閲覧できるようになるまで1週間程度かかります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "どのデバイスで使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iOSアプリ（iPhone/iPad）、Androidアプリ、Webブラウザでご利用いただけます。"
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- Organization 構造化データ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "tiger4th",
+      "url": "https://tiger4th.com/",
+      "sameAs": [
+        "https://x.com/giin_app",
+        "https://x.com/tiger4th"
+      ]
     }
   </script>
 
@@ -79,9 +168,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link page-scroll" href="#screenshots">スクリーンショット</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link page-scroll" href="#download">ダウンロード</a>
             </li>
             <li class="nav-item">
               <a class="nav-link page-scroll" href="#about-giin">GIINとは</a>
@@ -219,7 +305,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-10 col-md-12 col-xs-12">
           <div class="section-header">
-            <h2 class="section-title">国会アプリ「GIIN（ギイン）」とは？</h2>
+            <h2 class="section-title">国会アプリ「GIIN」（ギイン）とは？</h2>
             <p class="section-subtitle">
               「GIIN」（ギイン）は、議員やワードをフォローして、国会での議論をチャット形式で手軽に読める、新しいスタイルの国会議事録・政治学習アプリです。<br>
               メディアやSNSで切り取られた情報ではなく、議員の「生の発言（一次情報）」を直接チェックして、政治のリアルに触れてみませんか？
@@ -481,6 +567,83 @@
     </div>
   </section>
   <!-- download Section3 End -->
+
+  <!-- FAQ Section Start -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">よくある質問</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="card mb-3">
+              <div class="card-header" id="faq1">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100" type="button" data-toggle="collapse"
+                    data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    GIINとは何ですか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+                <div class="card-body">
+                  GIIN（ギイン）は、議員やキーワードをフォローして、国会での議論をチャット形式で手軽に読める国会議事録・政治学習アプリです。AIによる要約機能も搭載しています。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq2">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    GIINは無料で使えますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                <div class="card-body">
+                  はい、GIINは完全無料で会員登録も不要でご利用いただけます。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq3">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    過去の国会議事録はどこまで見られますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                <div class="card-body">
+                  1947年5月の第1回国会から、最新の国会まで全ての会議を収録しています。<br>
+                  最新の会議は、閲覧できるようになるまで1週間程度かかります。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq4">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    どのデバイスで使えますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+                <div class="card-body">
+                  iOSアプリ（iPhone/iPad）、Androidアプリ、Webブラウザでご利用いただけます。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section End -->
 
   <!-- Contact Section Start -->
   <section id="contact">
