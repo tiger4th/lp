@@ -2069,6 +2069,14 @@ textarea {
   border: 1px solid #8C52FF;
 }
 
+#contact2 .contact-block {
+  padding-top: 0;
+}
+
+#contact2 .formrun-embed {
+  width: 360px;
+}
+
 .offset-top {
   margin-top: -100px;
 }
