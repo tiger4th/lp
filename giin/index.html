@@ -1,258 +1,807 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="GIIN, ギイン, 議員, 国会, アプリ, 政治">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="tiger4th">
-    <title>GIIN（ギイン） - 国会アプリ</title>
-    <meta name=”description” content="議員やワードをフォローして、国会の発言をチャットアプリのような感覚でいつでも気軽に読むことができる国会アプリ GIIN（ギイン）" />
-    <meta property="og:title" content="GIIN（ギイン） - 国会アプリ">
-    <meta property="og:site_name" content="tiger4th.com">
-    <meta property="og:description" content="議員やワードをフォローして、国会の発言をチャットアプリのような感覚でいつでも気軽に読むことができる国会アプリ GIIN（ギイン）">
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="https://tiger4th.com/lp/giin/">
-    <meta property="og:image" content="https://tiger4th.com/lp/giin/img/download.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/line-icons.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">    
-    <link rel="stylesheet" href="css/responsive.css">
-    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="fontawesome/css/brands.css" rel="stylesheet" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="GIIN, ギイン, 議員, 国会, アプリ, 政治">
+  <meta name="author" content="tiger4th">
+  <title>GIIN（ギイン） - 国会議事録・AI要約・政治学習・議員</title>
+  <meta name="description" content="メディアの切り抜きではない、国会の「一次情報」をAIで要約。気になる議員やキーワードをフォローして政治を身近に。 GIIN（ギイン）" />
+  <meta property="og:title" content="GIIN（ギイン） - 国会議事録・AI要約・政治学習・議員">
+  <meta property="og:site_name" content="tiger4th.com">
+  <meta property="og:description" content="メディアの切り抜きではない、国会の「一次情報」をAIで要約。気になる議員やキーワードをフォローして政治を身近に。 GIIN（ギイン）">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://tiger4th.com/lp/giin/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://tiger4th.com/lp/giin/img/download.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@giin_app">
+  <meta name="theme-color" content="#8C52FF">
+  <link rel="canonical" href="https://tiger4th.com/lp/giin/">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9Q6GVJRWH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-H9Q6GVJRWH');
-    </script>
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65992480081c7f001970f80d&product=inline-share-buttons&source=platform" async="async"></script>
-  </head>
-  
-  <body>
-    <!-- Header Section Start -->
-    <header id="home" class="hero-area-2">    
-      <div class="overlay"></div>
-      <nav class="navbar navbar-expand-md fixed-top scrolling-navbar">
-        <div class="container">
-          <a href="https://tiger4th.com/lp/giin/" class="navbar-brand"><img src="img/logo.png" alt="GIIN" height="40"></a>  
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="lni-menu"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#home">トップ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#screenshots">スクリーンショット</a>
-              </li>                            
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#download">ダウンロード</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">お問い合わせ</a>
-              </li> 
-            </ul>
+  <!-- SoftwareApplication 構造化データ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "GIIN",
+      "alternateName": "ギイン",
+      "description": "議員やワードをフォローして国会議事録の発言を読むことができるアプリ。メディアやSNSに切り取られた情報ではない、生の発言をチャットアプリのような感覚で閲覧可能。AIによる要約機能搭載。",
+      "operatingSystem": "iOS, Android, Web",
+      "applicationCategory": ["NewsApplication", "EducationalApplication"],
+      "url": "https://tiger4th.com/lp/giin/",
+      "image": "https://tiger4th.com/lp/giin/img/icon.png",
+      "screenshot": [
+        "https://tiger4th.com/lp/giin/img/screenshot/img-1.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-2.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-3.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-4.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-5.jpg",
+        "https://tiger4th.com/lp/giin/img/screenshot/img-6.jpg"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "tiger4th",
+        "url": "https://tiger4th.com/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/jp/app/id6758155810",
+        "https://play.google.com/store/apps/details?id=com.tiger4th.giin"
+      ],
+      "featureList": [
+        "議員フォロー機能",
+        "キーワードフォロー機能",
+        "チャット形式の議事録表示",
+        "AI要約機能",
+        "1947年からの全会議アーカイブ"
+      ],
+      "inLanguage": "ja"
+    }
+  </script>
+
+  <!-- FAQ 構造化データ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "GIINとは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GIIN（ギイン）は、議員やキーワードをフォローして、国会での議論をチャット形式で手軽に読める国会議事録・政治学習アプリです。AIによる要約機能も搭載しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "GIINは無料で使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、GIIN（ギイン）は完全無料で会員登録も不要でご利用いただけます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "どのデバイスで使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iOSアプリ（iPhone/iPad）、Androidアプリ、Webブラウザでご利用いただけます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "過去の議事録はどこまで見られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1947年5月の第1回国会から、最新の国会まで全ての会議を収録しています。最新の会議は、閲覧できるようになるまで1週間程度かかります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "データはどこから取得していますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "国立国会図書館が提供する『国会会議録検索システム 検索用API』を使用しています。公式の議事録データを活用しているため、正確で信頼性の高い情報を提供しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AI要約はどのように生成されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "最新の生成AIモデル（Google Gemini）を活用し、会議の内容を自動的に要約しています。発言の特徴や議論の流れ、決定事項などをわかりやすくまとめています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "議員以外の発言も見られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、国会に招かれた参考人や証人の発言も閲覧できます。専門家や関係者の意見も含めて、議論の全体像を把握できます。"
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- Organization 構造化データ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "tiger4th",
+      "url": "https://tiger4th.com/",
+      "sameAs": [
+        "https://x.com/giin_app",
+        "https://x.com/tiger4th"
+      ]
+    }
+  </script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/line-icons.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="fontawesome/css/solid.css" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9Q6GVJRWH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-H9Q6GVJRWH');
+  </script>
+  <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=65992480081c7f001970f80d&product=inline-share-buttons&source=platform"
+    async="async"></script>
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <header id="home" class="hero-area-2">
+    <div class="overlay"></div>
+    <nav class="navbar navbar-expand-md fixed-top scrolling-navbar">
+      <div class="container">
+        <a href="https://tiger4th.com/lp/giin/" class="navbar-brand"><img src="img/logo.png" alt="GIIN" height="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="lni-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#home">トップ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#screenshots">スクリーンショット</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#about-giin">GIINとは</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#popular-politicians">ピックアップ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row space-100">
+        <div class="col-lg-8 col-md-12 col-xs-12">
+          <div class="contents wow fadeInLeft" data-wow-delay="0.2s">
+            <h2 class="head-title">政治を身近に</h2>
+            <h1>
+              <p>国会アプリ <span class="head-app-name">GIIN（ギイン）</span></p>
+            </h1>
+            <div class="header-button">
+              <a href="https://apps.apple.com/jp/app/id6758155810" target="_blank" class="btn-app"><i
+                  class="fa-brands fa-apple"></i>
+                <div><span class="btn-app-text">App Store</span><br><span class="btn-app-text-small">からダウンロード</span>
+                </div>
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.tiger4th.giin" target="_blank"
+                class="btn-app"><i class="fa-brands fa-google-play"></i>
+                <div><span class="btn-app-text">Google Play</span><br><span class="btn-app-text-small">で手に入れよう</span>
+                </div>
+              </a>
+              <a href="https://tiger4th.com/giin/" target="_blank" class="btn-app"><i class="fa-solid fa-globe"></i>
+                <div><span class="btn-app-text">Web App</span><br><span class="btn-app-text-small">をブラウザで開く</span></div>
+              </a>
+            </div>
           </div>
         </div>
-      </nav>  
-      <div class="container">      
-        <div class="row space-100">
-          <div class="col-lg-6 col-md-12 col-xs-12">
-            <div class="contents">
-              <h2 class="head-title">政治を身近に</h2>
-              <h1><p>国会アプリ <span class="head-app-name">GIIN（ギイン）</span></p></h1>
-              <div class="header-button">
-                <a href="https://play.google.com/store/apps/details?id=com.tiger4th.giin" target="_blank" class="btn-app"><i class="fa-brands fa-google-play"></i><div><span class="btn-app-text">Google Play</span><br><span class="btn-app-text-small">で手に入れよう</span></div></a>
-                <a href="https://tiger4th.com/giin/" target="_blank" class="btn-app"><i class="fa-brands fa-apple"></i><div><span class="btn-app-text">Web App</span><br><span class="btn-app-text-small">からダウンロード</span></div></a>
-              </div>
-              <div class="header-ios-notice">
-                <br>※ iOSでは、ウェブアプリを開いてから<a href="https://support.apple.com/ja-jp/guide/iphone/iph42ab2f3a7/ios#iph4f9a47bbc" target="_blank">「ホーム画面に追加」</a>してご利用ください。
-              </div>
-            </div>
+        <div class="col-lg-4 col-md-12 col-xs-12">
+          <div class="intro-img wow fadeInRight" data-wow-delay="0.2s">
+            <img src="img/intro-mobile.png" alt="GIIN スクリーンショット" height="500">
           </div>
-          <div class="col-lg-6 col-md-12 col-xs-12">
-            <div class="intro-img">
-              <img src="img/intro-mobile.png" alt="GIIN スクリーンショット" height="500">
-            </div>            
-          </div>
-        </div> 
-      </div>             
-    </header>
-    <!-- Header Section End --> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
 
-    <!-- Awesome Screens Section Start -->
-    <section id="screenshots" class="screens-shot section">
-      <div class="container">
-        <div class="row">
-          <div class="touch-slider owl-carousel">
-            <div class="item">
-              <div class="screenshot-thumb">
-                <img class="img-fluid" src="img/screenshot/img-1.png" alt="政治を身近に 議員の発言を気軽に読める">
-              </div>
+  <!-- Awesome Screens Section Start -->
+  <section id="screenshots" class="screens-shot section">
+    <div class="container">
+      <div class="row">
+        <div class="touch-slider owl-carousel">
+          <div class="item">
+            <div class="screenshot-thumb">
+              <img class="img-fluid" src="img/screenshot/img-1.jpg" alt="議事録がチャットみたいに読める！ 議員のリアルな発言をチェック">
             </div>
-            <div class="item">
-              <div class="screenshot-thumb">
-                <img class="img-fluid" src="img/screenshot/img-2.png" alt="話題をチェック 気になるワードの議論を追える">
-              </div>
+          </div>
+          <div class="item">
+            <div class="screenshot-thumb">
+              <img class="img-fluid" src="img/screenshot/img-2.jpg" alt="気になる議員をフォローしよう！ あなただけのリストが作れる">
             </div>
-            <div class="item">
-              <div class="screenshot-thumb">
-                <img class="img-fluid" src="img/screenshot/img-3.png" alt="全会議収録 第1回国会からすべて見られる">
-              </div>
+          </div>
+          <div class="item">
+            <div class="screenshot-thumb">
+              <img class="img-fluid" src="img/screenshot/img-3.jpg" alt="興味のあるワードを登録！ 関連する話題を見逃さない">
             </div>
-            <div class="item">
-              <div class="screenshot-thumb">
-                <img class="img-fluid" src="img/screenshot/img-4.png" alt="意外な人も？ 議員以外の発言者も調べられる">
-              </div>
+          </div>
+          <div class="item">
+            <div class="screenshot-thumb">
+              <img class="img-fluid" src="img/screenshot/img-4.jpg" alt="発言の中身も一発で検索！ 見たい発言がすぐに見つかる">
             </div>
-            <div class="item">
-              <div class="screenshot-thumb">
-                <img class="img-fluid" src="img/screenshot/img-5.png" alt="AI要約 自動要約で要点を把握">
-              </div>
+          </div>
+          <div class="item">
+            <div class="screenshot-thumb">
+              <img class="img-fluid" src="img/screenshot/img-5.jpg" alt="AIが会議をサクッと要約！ ポイントだけ短時間で把握">
+            </div>
+          </div>
+          <div class="item">
+            <div class="screenshot-thumb">
+              <img class="img-fluid" src="img/screenshot/img-6.jpg" alt="国会の歴史をタイムスリップ！ 第1回から現在まで全会議を収録">
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Awesome Screens Section End -->  
+    </div>
+  </section>
+  <!-- Awesome Screens Section End -->
 
-    <!-- download Section Start -->
-    <section id="download">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-xs-12">            
-            <div class="download-thumb wow fadeInLeft" data-wow-delay="0.2s">
-              <img class="img-fluid" src="img/download.png" alt="政治を身近に 国会アプリ GIIN">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-xs-12">
-            <div class="download-wrapper wow fadeInRight" data-wow-delay="0.2s">
-              <div>
-                <div class="download-text">
-                  <p>GIIN（ギイン）は、議員やワードをフォローして国会議事録の発言を読むことができるアプリです。</p>
-                  <p>使い慣れたチャットアプリのような感覚で、メディアやSNSに切り取られた情報ではない、生の発言をいつでも気軽に見ることができます。</p>
-                  <p>完全無料で会員登録も不要でご利用いただけます。</p>
-                </div>
-                <div class="download-app">
-                  <a href="https://play.google.com/store/apps/details?id=com.tiger4th.giin" target="_blank" class="btn-app"><i class="fa-brands fa-google-play"></i><div><span class="btn-app-text">Google Play</span><br><span class="btn-app-text-small">で手に入れよう</span></div></a>
-                  <a href="https://tiger4th.com/giin/" target="_blank" class="btn-app"><i class="fa-brands fa-apple"></i><div><span class="btn-app-text">Web App</span><br><span class="btn-app-text-small">からダウンロード</span></div></a>
-                </div>
-                <div class="header-ios-notice-download">
-                  <br>※ iOSでは、ウェブアプリを開いてから<a href="https://support.apple.com/ja-jp/guide/iphone/iph42ab2f3a7/ios#iph4f9a47bbc" target="_blank">「ホーム画面に追加」</a>してご利用ください。
-                </div>
-              </div>
-            </div>
+  <!-- download Section Start -->
+  <section id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-xs-12">
+          <div class="download-thumb wow fadeInLeft" data-wow-delay="0.2s">
+            <img class="img-fluid" src="img/download.png" alt="政治を身近に 国会アプリ GIIN">
           </div>
         </div>
-      </div>
-    </section>
-    <!-- download Section Start -->
-
-    <!-- Contact Section Start -->
-    <section id="contact">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row justify-content-center"> 
-            <div class="mt">
-              <div class="col-lg-12 col-md-12 col-xs-12">
-                <div class="contact-block wow fadeInUp" data-wow-delay="0.2s">
-                  <div>
-                    <h2 class="section-title">Xでお問い合わせ</h2>
-                  </div>
-                  <div>
-                    <a href="https://twitter.com/messages/compose?recipient_id=1799349875672600576&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-lang="ja" data-screen-name="giin_app" data-show-count="false">Message @giin_app</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  </div>
-              </div>
-              </div>
-            </div> 
-          </div>
-        </div>
-      </div>        
-    </section>
-
-    <section id="contact2">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row justify-content-center"> 
+        <div class="col-lg-6 col-md-6 col-xs-12">
+          <div class="download-wrapper wow fadeInRight" data-wow-delay="0.2s">
             <div>
-              <div class="col-lg-12 col-md-12 col-xs-12">
-                <div class="contact-block wow fadeInUp" data-wow-delay="0.2s">
-                  <script src="https://sdk.form.run/js/v2/embed.js"></script>
-                  <div
-                    class="formrun-embed"
-                    data-formrun-form="@tiger4th-giin"
-                    data-formrun-redirect="true">
-                  </div>
-                </div>
+              <div class="download-text">
+                <p>GIIN（ギイン）は、議員やワードをフォローして国会議事録の発言を読むことができるアプリです。</p>
+                <p>使い慣れたチャットアプリのような感覚で、メディアやSNSに切り取られた情報ではない、生の発言をいつでも気軽に見ることができます。</p>
+                <p>完全無料で会員登録も不要でご利用いただけます。</p>
               </div>
-            </div> 
+              <div class="download-app">
+                <a href="https://apps.apple.com/jp/app/id6758155810" target="_blank" class="btn-app"><i
+                    class="fa-brands fa-apple"></i>
+                  <div><span class="btn-app-text">App Store</span><br><span class="btn-app-text-small">からダウンロード</span>
+                  </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.tiger4th.giin" target="_blank"
+                  class="btn-app"><i class="fa-brands fa-google-play"></i>
+                  <div><span class="btn-app-text">Google Play</span><br><span class="btn-app-text-small">で手に入れよう</span>
+                  </div>
+                </a>
+                <a href="https://tiger4th.com/giin/" target="_blank" class="btn-app"><i class="fa-solid fa-globe"></i>
+                  <div><span class="btn-app-text">Web App</span><br><span class="btn-app-text-small">をブラウザで開く</span>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>        
-    </section>
-    <!-- Contact Section End -->
+      </div>
+    </div>
+  </section>
+  <!-- download Section End -->
 
-    <div class="sharethis-inline-share-buttons"></div>
+  <!-- About Section Start -->
+  <section id="about-giin" class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12 col-xs-12">
+          <div class="section-header">
+            <h2 class="section-title">国会アプリ「GIIN」（ギイン）とは？</h2>
+            <p class="section-subtitle">
+              「GIIN」（ギイン）は、議員やワードをフォローして、国会での議論をチャット形式で手軽に読める、新しいスタイルの国会議事録・政治学習アプリです。<br>
+              メディアやSNSで切り取られた情報ではなく、議員の「生の発言（一次情報）」を直接チェックして、政治のリアルに触れてみませんか？
+            </p>
+          </div>
+          <div class="about-content mt-4">
+            <h3 class="h5 mb-3">【こんな方におすすめ】</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="lni-check-mark-circle text-primary mr-2"></i>テレビの報道だけでは物足りない、偏りが気になる方</li>
+              <li class="mb-2"><i class="lni-check-mark-circle text-primary mr-2"></i>選挙の投票先を選ぶために、議員の普段の発言や考えを知りたい方
+              </li>
+              <li class="mb-2"><i class="lni-check-mark-circle text-primary mr-2"></i>特定のテーマ（経済、憲法、子育て支援など）の議論を追いたい方
+              </li>
+              <li class="mb-2"><i class="lni-check-mark-circle text-primary mr-2"></i>政治経済（政経）や現代社会を勉強中の学生、就活生の方</li>
+              <li class="mb-2"><i class="lni-check-mark-circle text-primary mr-2"></i>ビジネスで法改正や政策の動向をいち早く知りたい方</li>
+            </ul>
 
-    <!-- Footer Section Start -->
-    <footer>
-      <!-- Footer Area Start -->
-      <section class="footer-Content">
-        <!-- Copyright Start  -->
-        <div class="copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="site-info float-left">
-                  <p>&copy; 2024 <a href="https://tiger4th.com/" target="_blank">tiger4th.com</a></p>
-                </div>              
-                <div class="float-right">  
-                  <ul class="footer-social">
-                    <a href="https://twitter.com/giin_app?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @giin_app</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  </ul> 
+            <h3 class="h5 mb-3 mt-4">【GIINの主な機能】</h3>
+
+            <h4 class="h6 mt-3">👤 1. 議員をフォローしてタイムラインで追う</h4>
+            <p class="mb-2">
+              国会議員（衆議院・参議院）をフォローすると、その議員の発言を抽出して見ることができます。応援している推しの議員、注目している政治家の活動をチェックできます。証人や参考人など、政治家以外の発言者もチェック可能です。
+            </p>
+
+            <h4 class="h6 mt-3">🏷️ 2. キーワード（ワード）フォロー機能</h4>
+            <p class="mb-2">
+              「消費税」「教育無償化」「憲法改正」など、気になるキーワードを登録。その言葉が含まれる国会発言を自動で収集します。興味のあるトピックについて、国会で今どのような議論がなされているか、リアルな文脈で理解できます。
+            </p>
+
+            <h4 class="h6 mt-3">💬 3. チャットUIでサクサク読める議事録</h4>
+            <p class="mb-2">
+              堅苦しい国会議事録を、使い慣れたメッセージアプリのようなUIで表示。発言ごとに吹き出しで表示され、会話の流れがひと目でわかります。直感的な操作で、過去の膨大な記録もスムーズに閲覧できます。</p>
+
+            <h4 class="h6 mt-3">✨ 4. AI要約で議論のポイントを瞬時に理解</h4>
+            <p class="mb-2">
+              最新の生成AIモデルを活用し、長い議論や答弁の内容を分かりやすく要約します。「発言の特徴」「議論の流れ」「決定事項」などをAIが自動でまとめるので、忙しい方でも短時間で内容を把握できます。</p>
+
+            <h4 class="h6 mt-3">📚 5. 圧倒的なアーカイブ（会議一覧検索）</h4>
+            <p class="mb-2">1947年5月の第1回国会から、最新の国会まで全ての会議を収録。年月や会議名から検索して、歴史的な答弁や過去の重要な議論を振り返ることも可能です。</p>
+
+            <h3 class="h5 mb-3 mt-4">【なぜ今、一次情報なのか？】</h3>
+            <p class="mb-3">
+              ニュース番組やネット記事では、時間の制約や編集方針により、発言の一部が切り取られて報道されることがあります。<br>またSNSでもデマや誤情報が蔓延しています。<br>GIINを使えば、前後の文脈を含めた「本当の発言内容」を確認でき、ご自身で事実に基づいた判断（ファクトチェック）ができるようになります。
+            </p>
+
+            <h3 class="h5 mb-3 mt-4">【取り扱いデータについて】</h3>
+            <p class="mb-3">本アプリは公式の議事録データを活用していますが、政府や特定の政党・団体とは無関係の独立したアプリです。<br>中立的な立場から、使いやすさを追求して開発されています。</p>
+
+            <p class="mb-4">完全無料、会員登録不要ですぐに使えます。<br>まずは気になる議員やワードを検索してみてください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- download Section2 Start -->
+  <section id="download2">
+    <div class="container wow fadeInLeft" data-wow-delay="0.2s">
+      <a href="https://apps.apple.com/jp/app/id6758155810" target="_blank" class="btn-app"><i
+          class="fa-brands fa-apple"></i>
+        <div><span class="btn-app-text">App Store</span><br><span class="btn-app-text-small">からダウンロード</span>
+        </div>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.tiger4th.giin" target="_blank" class="btn-app"><i
+          class="fa-brands fa-google-play"></i>
+        <div><span class="btn-app-text">Google Play</span><br><span class="btn-app-text-small">で手に入れよう</span>
+        </div>
+      </a>
+      <a href="https://tiger4th.com/giin/" target="_blank" class="btn-app"><i class="fa-solid fa-globe"></i>
+        <div><span class="btn-app-text">Web App</span><br><span class="btn-app-text-small">をブラウザで開く</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- download Section2 End -->
+
+  <!-- Pickup Section Start -->
+  <section id="popular-politicians" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">注目の国会議員</h2>
+        <p class="section-subtitle">国会で注目を集める議員（参考人）をピックアップしました。<br>タップするだけで、その人物の過去のすべての発言や質疑をチャット形式で読むことができます。</p>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-10">
+          <div class="tags-cloud text-center">
+            <a href="https://tiger4th.com/giin/#/chat?name=高市早苗&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">高市早苗</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=野田佳彦&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">野田佳彦</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=藤田文武&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">藤田文武</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=玉木雄一郎&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">玉木雄一郎</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=斉藤鉄夫&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">斉藤鉄夫</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=神谷宗幣&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">神谷宗幣</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=山本太郎&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">山本太郎</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=田村智子&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">田村智子</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=百田尚樹&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">百田尚樹</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=福島瑞穂&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">福島瑞穂</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=安野貴博&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">安野貴博</a>
+            <br>
+            <a href="https://tiger4th.com/giin/#/chat?name=小林鷹之&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">小林鷹之</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=小泉進次郎&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">小泉進次郎</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=林芳正&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">林芳正</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=石破茂&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">石破茂</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=植田和男&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">植田和男</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=小林次郎&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">小林次郎</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=カーター&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">カーター</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=堀江貴文&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">堀江貴文</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=さかなクン&type=speaker&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">さかなクン</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="popular-keywords" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">注目のキーワード</h2>
+        <p class="section-subtitle">今話題の政策や社会問題を表すキーワードです。<br>気になるワードを選ぶと、関連する国会での議論をまとめてチェックできます。</p>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-10">
+          <div class="tags-cloud text-center">
+            <a href="https://tiger4th.com/giin/#/chat?name=消費税&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">消費税</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=憲法改正&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">憲法改正</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=防衛増税&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">防衛増税</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=賃上げ&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">賃上げ</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=政治とカネ&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">政治とカネ</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=大阪万博&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">大阪万博</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=選択的夫婦別姓&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">選択的夫婦別姓</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=社会保険料&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">社会保険料</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=マイナ保険証&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">マイナ保険証</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=ライドシェア&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">ライドシェア</a>
+            <br>
+            <a href="https://tiger4th.com/giin/#/chat?name=子育て&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">子育て</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=高齢化&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">高齢化</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=震災&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">震災</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=物価&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">物価</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=NISA&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">NISA</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=SDGs&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">SDGs</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=AI&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">AI</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=暗号資産&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">暗号資産</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=ポケモン&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">ポケモン</a>
+            <a href="https://tiger4th.com/giin/#/chat?name=静粛に&type=any&issueId" target="_blank"
+              class="badge badge-light p-2 m-1 border text-dark">静粛に</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="featured-meetings" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">注目の会議</h2>
+        <p class="section-subtitle">歴史的な名場面や、メディアで話題になった重要な会議です。<br>当時の議論の流れや雰囲気を、発言ごとのチャット形式で追体験できます。</p>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-10">
+          <div class="tags-cloud text-center">
+            <div class="meeting-tag mb-3">
+              <a href="https://tiger4th.com/giin/#/chat?name=衆議院+予算委員会+第2号&type=issue&issueId=121905261X00220251107"
+                target="_blank" class="badge badge-light p-2 m-1 border text-dark">2025/11/07 衆議院 予算委員会 第2号</a>
+              <p class="text-muted small">高市首相による「存立危機事態」に関する答弁。台湾情勢と日本の安全保障法制の適用について議論が行われた。</p>
+            </div>
+            <div class="meeting-tag mb-3">
+              <a href="https://tiger4th.com/giin/#/chat?name=衆議院+本会議+第4号&type=issue&issueId=121005254X00420221025"
+                target="_blank" class="badge badge-light p-2 m-1 border text-dark">2022/10/25 衆議院 本会議 第4号</a>
+              <p class="text-muted small">野田佳彦元首相による安倍晋三元首相への追悼演説。故人を偲び、党派を超えた敬意が込められた演説。</p>
+            </div>
+            <div class="meeting-tag mb-3">
+              <a href="https://tiger4th.com/giin/#/chat?name=衆議院+本会議+第45号&type=issue&issueId=119605254X04520180720"
+                target="_blank" class="badge badge-light p-2 m-1 border text-dark">2018/07/20 衆議院 本会議 第45号</a>
+              <p class="text-muted small">枝野幸男氏による内閣不信任決議案の趣旨弁明演説。2時間43分におよび、戦後最長の演説記録となった。</p>
+            </div>
+            <div class="meeting-tag mb-3">
+              <a href="https://tiger4th.com/giin/#/chat?name=衆議院+予算委員会+第4号&type=issue&issueId=118305261X00420130212"
+                target="_blank" class="badge badge-light p-2 m-1 border text-dark">2013/02/12 衆議院 予算委員会 第4号</a>
+              <p class="text-muted small">石原慎太郎氏による質疑。憲法や歴史認識、「日本人が失ったもの」について深く問いかけた、注目度の高い会議。</p>
+            </div>
+            <div class="meeting-tag mb-3">
+              <a href="https://tiger4th.com/giin/#/chat?name=参議院+本会議+第3号&type=issue&issueId=116915254X00320080123"
+                target="_blank" class="badge badge-light p-2 m-1 border text-dark">2008/01/23 参議院 本会議 第3号</a>
+              <p class="text-muted small">自民・尾辻秀久氏による民主・山本孝史氏への追悼演説。党派を超えた友情と敬意が込められた演説として知られる。</p>
+            </div>
+            <div class="meeting-tag mb-3">
+              <a href="https://tiger4th.com/giin/#/chat?name=参議院+本会議+第1号&type=issue&issueId=100115254X00119470520"
+                target="_blank" class="badge badge-light p-2 m-1 border text-dark">1947/05/21 参議院 本会議 第1号</a>
+              <p class="text-muted small">1947年に召集された第1回国会の、参議院における最初の本会議。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pickup Section End -->
+
+  <!-- download Section3 Start -->
+  <section id="download3">
+    <div class="container wow fadeInRight" data-wow-delay="0.2s">
+      <a href="https://apps.apple.com/jp/app/id6758155810" target="_blank" class="btn-app"><i
+          class="fa-brands fa-apple"></i>
+        <div><span class="btn-app-text">App Store</span><br><span class="btn-app-text-small">からダウンロード</span>
+        </div>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.tiger4th.giin" target="_blank" class="btn-app"><i
+          class="fa-brands fa-google-play"></i>
+        <div><span class="btn-app-text">Google Play</span><br><span class="btn-app-text-small">で手に入れよう</span>
+        </div>
+      </a>
+      <a href="https://tiger4th.com/giin/" target="_blank" class="btn-app"><i class="fa-solid fa-globe"></i>
+        <div><span class="btn-app-text">Web App</span><br><span class="btn-app-text-small">をブラウザで開く</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- download Section3 End -->
+
+  <!-- FAQ Section Start -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">よくある質問</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="card mb-3">
+              <div class="card-header" id="faq1">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100" type="button" data-toggle="collapse"
+                    data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    GIINとは何ですか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+                <div class="card-body">
+                  GIIN（ギイン）は、議員やキーワードをフォローして、国会での議論をチャット形式で手軽に読める国会議事録・政治学習アプリです。AIによる要約機能も搭載しています。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq2">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    GIINは無料で使えますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                <div class="card-body">
+                  はい、GIIN（ギイン）は完全無料で会員登録も不要でご利用いただけます。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq4">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    どのデバイスで使えますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+                <div class="card-body">
+                  iOSアプリ（iPhone/iPad）、Androidアプリ、Webブラウザでご利用いただけます。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq3">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    過去の議事録はどこまで見られますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                <div class="card-body">
+                  1947年5月の第1回国会から、最新の国会まで全ての会議を収録しています。<br>
+                  最新の会議は、閲覧できるようになるまで1週間程度かかります。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq5">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    データはどこから取得していますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse5" class="collapse" aria-labelledby="faq5" data-parent="#faqAccordion">
+                <div class="card-body">
+                  国立国会図書館が提供する「<a href="https://kokkai.ndl.go.jp/api.html" target="_blank">国会会議録検索システム
+                    検索用API</a>」を使用しています。<br>
+                  公式の議事録データを活用しているため、正確で信頼性の高い情報を提供しています。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq6">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    AI要約はどのように生成されますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse6" class="collapse" aria-labelledby="faq6" data-parent="#faqAccordion">
+                <div class="card-body">
+                  最新の生成AIモデル（<a href='https://gemini.google/jp/about/?hl=ja' target='_blank'>Google
+                    Gemini</a>）を活用し、会議の内容を自動的に要約しています。<br>
+                  発言の特徴や議論の流れ、決定事項などをわかりやすくまとめています。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq7">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    議員以外の発言も見られますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse7" class="collapse" aria-labelledby="faq7" data-parent="#faqAccordion">
+                <div class="card-body">
+                  はい、国会に招かれた参考人や証人の発言も閲覧できます。<br>
+                  専門家や関係者の意見も含めて、議論の全体像を把握できます。
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section End -->
+
+  <!-- Contact Section Start -->
+  <section id="contact">
+    <div class="contact-form">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="mt">
+            <div class="contact-block">
+              <div>
+                <h2 class="contact-title">Xでお問い合わせ</h2>
+              </div>
+              <div>
+                <a href="https://twitter.com/messages/compose?recipient_id=1799349875672600576&ref_src=twsrc%5Etfw"
+                  class="twitter-dm-button" data-size="large" data-lang="ja" data-screen-name="giin_app"
+                  data-show-count="false">Message @giin_app</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact2">
+    <div class="contact-form">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="contact-block">
+            <script src="https://sdk.form.run/js/v2/embed.js"></script>
+            <div class="formrun-embed" data-formrun-form="@tiger4th-giin" data-formrun-redirect="true">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <div class="sharethis-inline-share-buttons"></div>
+
+  <!-- Footer Section Start -->
+  <footer>
+    <!-- Footer Area Start -->
+    <section class="footer-Content">
+      <!-- Copyright Start  -->
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info float-left">
+                <p>&copy; 2024-<span id="current-year"></span> <a href="https://tiger4th.com/"
+                    target="_blank">tiger4th.com</a></p>
+              </div>
+              <div class="float-right">
+                <ul class="footer-social">
+                  <a href="https://twitter.com/giin_app?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                    data-lang="ja" data-show-count="false">Follow @giin_app</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Copyright End -->
-      </section>
-      <!-- Footer area End -->
-      
-    </footer>
-    <!-- Footer Section End --> 
+    </section>
+    <!-- Footer area End -->
 
-    <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="lni-chevron-up"></i>
-    </a> 
+  </footer>
+  <!-- Footer Section End -->
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.js"></script> 
-    <script src="js/jquery.mixitup.js"></script>       
-    <script src="js/jquery.nav.js"></script>    
-    <script src="js/scrolling-nav.js"></script>    
-    <script src="js/jquery.easing.min.js"></script>     
-    <script src="js/wow.js"></script>   
-    <script src="js/jquery.counterup.min.js"></script>     
-    <script src="js/waypoints.min.js"></script>      
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="js/jquery-min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/jquery.mixitup.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
