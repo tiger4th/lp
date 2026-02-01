@@ -905,12 +905,8 @@ a.back-to-top {
   text-align: left;
 }
 
-#download .download-thumb {
-  border: 1px solid #fff;
-  border-radius: 10px;
-}
-
 #download .download-thumb img {
+  border: 1px solid #fff;
   border-radius: 10px;
 }
 
