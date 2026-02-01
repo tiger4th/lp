@@ -2576,13 +2576,15 @@ footer .menu li a:hover {
 /* ==========================================================================
     download2
    ========================================================================== */
-#download2 {
+#download2,
+#download3 {
   background: #8C52FF;
   padding: 20px 0;
   text-align: center;
 }
 
-#download2 .btn-app {
+#download2 .btn-app,
+#download3 .btn-app {
   margin: 10px;
 }
 
@@ -2590,7 +2592,7 @@ footer .menu li a:hover {
     about-giin
    ========================================================================== */
 #about-giin {
-  padding-bottom: 0;
+  padding: 80px 0;
 }
 
 #about-giin a {
@@ -2609,9 +2611,17 @@ footer .menu li a:hover {
 }
 
 #popular-keywords {
-  padding: 40px 0 80px;
+  padding: 40px 0;
 }
 
 #popular-keywords .section-header {
+  margin-bottom: 20px;
+}
+
+#featured-meetings {
+  padding: 40px 0 80px;
+}
+
+#featured-meetings .section-header {
   margin-bottom: 20px;
 }
