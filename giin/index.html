@@ -87,15 +87,7 @@
           "name": "GIINは無料で使えますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい、GIINは完全無料で会員登録も不要でご利用いただけます。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "過去の国会議事録はどこまで見られますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "1947年5月の第1回国会から、最新の国会まで全ての会議を収録しています。最新の会議は、閲覧できるようになるまで1週間程度かかります。"
+            "text": "はい、GIIN（ギイン）は完全無料で会員登録も不要でご利用いただけます。"
           }
         },
         {
@@ -104,6 +96,38 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "iOSアプリ（iPhone/iPad）、Androidアプリ、Webブラウザでご利用いただけます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "過去の議事録はどこまで見られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1947年5月の第1回国会から、最新の国会まで全ての会議を収録しています。最新の会議は、閲覧できるようになるまで1週間程度かかります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "データはどこから取得していますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "国立国会図書館が提供する『国会会議録検索システム 検索用API』を使用しています。公式の議事録データを活用しているため、正確で信頼性の高い情報を提供しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AI要約はどのように生成されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "最新の生成AIモデル（Google Gemini）を活用し、会議の内容を自動的に要約しています。発言の特徴や議論の流れ、決定事項などをわかりやすくまとめています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "議員以外の発言も見られますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、国会に招かれた参考人や証人の発言も閲覧できます。専門家や関係者の意見も含めて、議論の全体像を把握できます。"
           }
         }
       ]
@@ -355,11 +379,6 @@
             <p class="mb-3">本アプリは公式の議事録データを活用していますが、政府や特定の政党・団体とは無関係の独立したアプリです。<br>中立的な立場から、使いやすさを追求して開発されています。</p>
 
             <p class="mb-4">完全無料、会員登録不要ですぐに使えます。<br>まずは気になる議員やワードを検索してみてください。</p>
-
-            <p class="mt-4 text-muted small">
-              ※当アプリケーションのコンテンツは、「<a href="https://kokkai.ndl.go.jp/api.html" target="_blank">国会会議録検索システム
-                検索用API</a>」（国立国会図書館）を加工して作成しています。
-            </p>
           </div>
         </div>
       </div>
@@ -603,23 +622,7 @@
               </div>
               <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
                 <div class="card-body">
-                  はい、GIINは完全無料で会員登録も不要でご利用いただけます。
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-header" id="faq3">
-                <h3 class="mb-0">
-                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    過去の国会議事録はどこまで見られますか？
-                  </button>
-                </h3>
-              </div>
-              <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
-                <div class="card-body">
-                  1947年5月の第1回国会から、最新の国会まで全ての会議を収録しています。<br>
-                  最新の会議は、閲覧できるようになるまで1週間程度かかります。
+                  はい、GIIN（ギイン）は完全無料で会員登録も不要でご利用いただけます。
                 </div>
               </div>
             </div>
@@ -635,6 +638,72 @@
               <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
                 <div class="card-body">
                   iOSアプリ（iPhone/iPad）、Androidアプリ、Webブラウザでご利用いただけます。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq3">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    過去の議事録はどこまで見られますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                <div class="card-body">
+                  1947年5月の第1回国会から、最新の国会まで全ての会議を収録しています。<br>
+                  最新の会議は、閲覧できるようになるまで1週間程度かかります。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq5">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    データはどこから取得していますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse5" class="collapse" aria-labelledby="faq5" data-parent="#faqAccordion">
+                <div class="card-body">
+                  国立国会図書館が提供する「<a href="https://kokkai.ndl.go.jp/api.html" target="_blank">国会会議録検索システム
+                    検索用API</a>」を使用しています。<br>
+                  公式の議事録データを活用しているため、正確で信頼性の高い情報を提供しています。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq6">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    AI要約はどのように生成されますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse6" class="collapse" aria-labelledby="faq6" data-parent="#faqAccordion">
+                <div class="card-body">
+                  最新の生成AIモデル（<a href='https://gemini.google/jp/about/?hl=ja' target='_blank'>Google
+                    Gemini</a>）を活用し、会議の内容を自動的に要約しています。<br>
+                  発言の特徴や議論の流れ、決定事項などをわかりやすくまとめています。
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-header" id="faq7">
+                <h3 class="mb-0">
+                  <button class="btn btn-link text-left w-100 collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    議員以外の発言も見られますか？
+                  </button>
+                </h3>
+              </div>
+              <div id="collapse7" class="collapse" aria-labelledby="faq7" data-parent="#faqAccordion">
+                <div class="card-body">
+                  はい、国会に招かれた参考人や証人の発言も閲覧できます。<br>
+                  専門家や関係者の意見も含めて、議論の全体像を把握できます。
                 </div>
               </div>
             </div>
