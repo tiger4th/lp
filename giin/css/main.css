@@ -2070,7 +2070,7 @@ textarea {
 }
 
 #contact2 .contact-block {
-  padding-top: 0;
+  padding: 0 18px;
 }
 
 #contact2 .formrun-embed {
