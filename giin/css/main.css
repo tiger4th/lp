@@ -2601,5 +2601,17 @@ footer .menu li a:hover {
     popular-politicians
    ========================================================================== */
 #popular-politicians {
-  padding-bottom: 80px;
+  padding: 80px 0 40px;
+}
+
+#popular-politicians .section-header {
+  margin-bottom: 20px;
+}
+
+#popular-keywords {
+  padding: 40px 0 80px;
+}
+
+#popular-keywords .section-header {
+  margin-bottom: 20px;
 }
