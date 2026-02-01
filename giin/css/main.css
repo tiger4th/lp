@@ -2718,3 +2718,100 @@ footer .menu li a:hover {
 #faq .card-header button[aria-expanded="true"] {
   color: #8C52FF;
 }
+
+/* ==========================================================================
+   Nivo Lightbox Custom Styles
+   ========================================================================== */
+.nivo-lightbox-nav {
+  display: block;
+}
+
+.nivo-lightbox-prev,
+.nivo-lightbox-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(140, 82, 255, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: -25px;
+  text-indent: -9999px;
+  overflow: hidden;
+  font-size: 0;
+  position: absolute;
+}
+
+.nivo-lightbox-prev:hover,
+.nivo-lightbox-next:hover {
+  background: rgba(140, 82, 255, 1);
+  transform: scale(1.1);
+}
+
+.nivo-lightbox-prev {
+  left: 20px;
+}
+
+.nivo-lightbox-next {
+  right: 20px;
+}
+
+.nivo-lightbox-prev::before,
+.nivo-lightbox-next::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-indent: 0;
+}
+
+.nivo-lightbox-prev::before {
+  transform: translate(-30%, -50%) rotate(-135deg);
+}
+
+.nivo-lightbox-next::before {
+  transform: translate(-70%, -50%) rotate(45deg);
+}
+
+.nivo-lightbox-close {
+  width: 40px;
+  height: 40px;
+  background: rgba(140, 82, 255, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nivo-lightbox-close:hover {
+  background: rgba(140, 82, 255, 1);
+  transform: scale(1.1);
+}
+
+.nivo-lightbox-close::before,
+.nivo-lightbox-close::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.nivo-lightbox-close::before {
+  transform: rotate(45deg);
+}
+
+.nivo-lightbox-close::after {
+  transform: rotate(-45deg);
+}
+
+.nivo-lightbox-title-wrap {
+  display: none;
+}
