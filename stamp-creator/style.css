@@ -86,7 +86,7 @@ button {
 }
 
 /* Typography */
-h1 {
+.hero-title {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.2;
@@ -186,6 +186,14 @@ p {
     font-weight: 700;
     font-size: 1.25rem;
     color: var(--text-color);
+}
+
+.logo h1 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    color: inherit;
+    line-height: inherit;
 }
 
 .logo img {
