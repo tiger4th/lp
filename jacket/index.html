@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新刊ジャケ買い！ - マンガ・ラノベの新刊をジャケットでチェック</title>
+  <meta name="description" content="マンガ、ライトノベル、ゲーム、CD、BD/DVDなど全23ジャンルの新刊をジャケット画像で一覧チェック。気になる表紙をタップしてすぐ購入。無料アプリ。">
+  <meta property="og:title" content="新刊ジャケ買い！">
+  <meta property="og:description" content="マンガ・ラノベの新刊をジャケットでチェック。全23ジャンル対応の無料アプリ。">
+  <meta property="og:image" content="https://tiger4th.com/jacket/lp/ogp.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tiger4th.com/jacket/">
+  <link rel="icon" type="image/png" href="../www/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../www/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ========== Reset & Base ========== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #0a0e1a;
+      color: #e8ecf1;
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ========== Utility ========== */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #4a87ee, #7bb3ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #8a94a6;
+      font-size: 1rem;
+      margin-bottom: 48px;
+    }
+
+    /* ========== Hero ========== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px 60px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(74, 135, 238, 0.25) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(123, 179, 255, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* Floating particles */
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: rgba(74, 135, 238, 0.4);
+      border-radius: 50%;
+      animation: float-up linear infinite;
+    }
+
+    @keyframes float-up {
+      0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-icon {
+      width: 140px;
+      height: 140px;
+      border-radius: 18px;
+      box-shadow:
+        0 20px 60px rgba(74, 135, 238, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.08);
+      margin: 0 auto 32px;
+      animation: icon-float 4s ease-in-out infinite;
+    }
+
+    @keyframes icon-float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 0%, #c0d8ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-tagline {
+      font-size: 1.25rem;
+      color: #8a94a6;
+      margin-bottom: 40px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .store-badges {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .store-badge::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    .store-badge-apple {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #fff;
+    }
+
+    .store-badge-apple:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(74, 135, 238, 0.2);
+    }
+
+    .store-badge-google {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #fff;
+    }
+
+    .store-badge-google:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(74, 135, 238, 0.2);
+    }
+
+    .store-badge svg {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+    }
+
+    .badge-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1.2;
+    }
+
+    .badge-text-small {
+      font-size: 0.65rem;
+      font-weight: 400;
+      opacity: 0.7;
+    }
+
+    .badge-text-large {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    /* ========== Features ========== */
+    .features {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .features::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(74, 135, 238, 0.3), transparent);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 40px 28px;
+      text-align: center;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(74, 135, 238, 0.4), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .feature-card:hover {
+      background: rgba(255, 255, 255, 0.07);
+      transform: translateY(-4px);
+      border-color: rgba(74, 135, 238, 0.2);
+    }
+
+    .feature-card:hover::before {
+      opacity: 1;
+    }
+
+    .feature-icon {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #8a94a6;
+      line-height: 1.7;
+    }
+
+    /* ========== Screenshots ========== */
+    .screenshots {
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .screenshots::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(74, 135, 238, 0.3), transparent);
+    }
+
+    .screenshots-track-wrapper {
+      position: relative;
+      overflow: hidden;
+      margin: 0 -24px;
+      padding: 20px 0;
+    }
+
+    .screenshots-track {
+      display: flex;
+      gap: 24px;
+      animation: scroll-left 30s linear infinite;
+      width: max-content;
+    }
+
+    .screenshots-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .screenshot-item {
+      flex-shrink: 0;
+      width: 260px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.06);
+      transition: transform 0.4s ease;
+    }
+
+    .screenshot-item:hover {
+      transform: scale(1.03);
+    }
+
+    .screenshot-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ========== Genres ========== */
+    .genres {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .genres::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(74, 135, 238, 0.3), transparent);
+    }
+
+    .genre-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .genre-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 100px;
+      font-size: 0.9rem;
+      color: #c0d0e4;
+      transition: all 0.3s ease;
+    }
+
+    .genre-tag:hover {
+      background: rgba(74, 135, 238, 0.15);
+      border-color: rgba(74, 135, 238, 0.3);
+      color: #7bb3ff;
+    }
+
+    .genre-tag-icon {
+      font-size: 1.1rem;
+    }
+
+    /* ========== CTA ========== */
+    .cta {
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(74, 135, 238, 0.3), transparent);
+    }
+
+    .cta-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 300px;
+      background: radial-gradient(ellipse, rgba(74, 135, 238, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta h2 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 0%, #c0d8ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cta p {
+      color: #8a94a6;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    /* ========== Footer ========== */
+    .footer {
+      padding: 32px 0;
+      text-align: center;
+      color: #4a5568;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .footer a {
+      color: #6a7a90;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #7bb3ff;
+    }
+
+    /* ========== Scroll Animation ========== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ========== Responsive ========== */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-tagline {
+        font-size: 1rem;
+      }
+
+      .hero-icon {
+        width: 110px;
+        height: 110px;
+        border-radius: 14px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .feature-card {
+        padding: 28px 20px;
+      }
+
+      .screenshot-item {
+        width: 200px;
+      }
+
+      .cta h2 {
+        font-size: 1.6rem;
+      }
+
+      .store-badges {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .store-badge {
+        width: 240px;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <img src="./image/icon.png" alt="新刊ジャケ買い！ アイコン" class="hero-icon fade-in" id="hero-icon">
+      <h1 class="fade-in">新刊ジャケ買い！</h1>
+      <p class="hero-tagline fade-in">
+        マンガ・ラノベ・ゲームの新刊を<br>
+        ジャケット画像でサクッとチェック
+      </p>
+      <div class="store-badges fade-in">
+        <a href="https://apps.apple.com/jp/app/id6740227498" class="store-badge store-badge-apple" target="_blank"
+          rel="noopener" id="badge-apple">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+          </svg>
+          <span class="badge-text">
+            <span class="badge-text-small">Download on the</span>
+            <span class="badge-text-large">App Store</span>
+          </span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.tiger4th.jacket2"
+          class="store-badge store-badge-google" target="_blank" rel="noopener" id="badge-google">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+          </svg>
+          <span class="badge-text">
+            <span class="badge-text-small">GET IT ON</span>
+            <span class="badge-text-large">Google Play</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Features ========== -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title fade-in">アプリの特徴</h2>
+      <p class="section-subtitle fade-in">気になる新刊と、もっと気軽に出会える</p>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <span class="feature-icon">📱</span>
+          <h3>ジャケットで一覧チェック</h3>
+          <p>表紙画像がタイル状に並ぶので、スクロールするだけで気になる新刊がすぐ見つかります。</p>
+        </div>
+        <div class="feature-card fade-in">
+          <span class="feature-icon">🔄</span>
+          <h3>新刊 / ベストセラー切替</h3>
+          <p>新着順とベストセラー順をワンタップで切り替え。話題の作品も新刊もまとめてチェック。</p>
+        </div>
+        <div class="feature-card fade-in">
+          <span class="feature-icon">🛒</span>
+          <h3>タップしてすぐ購入</h3>
+          <p>楽天ブックス・Amazon・Yahoo!ショッピングに直接リンク。気になったらすぐ購入ページへ。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Screenshots ========== -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <h2 class="section-title fade-in">スクリーンショット</h2>
+      <p class="section-subtitle fade-in">直感的なUIで、新刊チェックがもっと楽しく</p>
+    </div>
+    <div class="screenshots-track-wrapper">
+      <div class="screenshots-track" id="screenshots-track">
+        <div class="screenshot-item"><img src="./image/phone/1.png" alt="新刊一覧画面" loading="lazy"></div>
+        <div class="screenshot-item"><img src="./image/phone/2.png" alt="ベストセラー画面" loading="lazy"></div>
+        <div class="screenshot-item"><img src="./image/phone/3.png" alt="ジャンル選択画面" loading="lazy"></div>
+        <div class="screenshot-item"><img src="./image/phone/4.png" alt="ジャンル一覧画面" loading="lazy"></div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="screenshot-item"><img src="./image/phone/1.png" alt="新刊一覧画面" loading="lazy"></div>
+        <div class="screenshot-item"><img src="./image/phone/2.png" alt="ベストセラー画面" loading="lazy"></div>
+        <div class="screenshot-item"><img src="./image/phone/3.png" alt="ジャンル選択画面" loading="lazy"></div>
+        <div class="screenshot-item"><img src="./image/phone/4.png" alt="ジャンル一覧画面" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Genres ========== -->
+  <section class="genres" id="genres">
+    <div class="container">
+      <h2 class="section-title fade-in">全23ジャンル対応</h2>
+      <p class="section-subtitle fade-in">マンガからゲームまで、好きなジャンルをまるごとカバー</p>
+      <div class="genre-tags fade-in">
+        <span class="genre-tag"><span class="genre-tag-icon">📖</span>少年マンガ</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📖</span>少女マンガ</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📖</span>青年マンガ</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📖</span>レディースコミック</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📖</span>漫画文庫</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📚</span>少年ライトノベル</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📚</span>少女ライトノベル</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📺</span>アニメ本</span>
+        <span class="genre-tag"><span class="genre-tag-icon">🎮</span>ゲーム本</span>
+        <span class="genre-tag"><span class="genre-tag-icon">🎵</span>アニメCD</span>
+        <span class="genre-tag"><span class="genre-tag-icon">🎬</span>アニメBD/DVD</span>
+        <span class="genre-tag"><span class="genre-tag-icon">🎮</span>ゲーム（PS5）</span>
+        <span class="genre-tag"><span class="genre-tag-icon">🎮</span>ゲーム（Switch2）</span>
+        <span class="genre-tag"><span class="genre-tag-icon">🎁</span>おもちゃ・グッズ</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📖</span>その他マンガ</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📚</span>その他ライトノベル</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📰</span>マンガ・アニメ雑誌</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📕</span>本（すべて）</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📰</span>雑誌（すべて）</span>
+        <span class="genre-tag"><span class="genre-tag-icon">💿</span>CD（すべて）</span>
+        <span class="genre-tag"><span class="genre-tag-icon">📀</span>BD/DVD（すべて）</span>
+        <span class="genre-tag"><span class="genre-tag-icon">🕹️</span>ゲーム/おもちゃ（すべて）</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta" id="download">
+    <div class="cta-glow"></div>
+    <div class="cta-content container">
+      <h2 class="fade-in">今すぐ無料ダウンロード</h2>
+      <p class="fade-in">新しい作品との出会いが、ここから始まる</p>
+      <div class="store-badges fade-in">
+        <a href="https://apps.apple.com/jp/app/id6740227498" class="store-badge store-badge-apple" target="_blank"
+          rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+          </svg>
+          <span class="badge-text">
+            <span class="badge-text-small">Download on the</span>
+            <span class="badge-text-large">App Store</span>
+          </span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.tiger4th.jacket2"
+          class="store-badge store-badge-google" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+          </svg>
+          <span class="badge-text">
+            <span class="badge-text-small">GET IT ON</span>
+            <span class="badge-text-large">Google Play</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2015-2026 <a href="https://tiger4th.com/" target="_blank" rel="noopener">tiger4th.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // ===== Scroll-triggered fade-in =====
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // ===== Floating particles =====
+    const particlesEl = document.getElementById('particles');
+    for (let i = 0; i < 20; i++) {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDuration = (8 + Math.random() * 12) + 's';
+      p.style.animationDelay = (Math.random() * 10) + 's';
+      p.style.width = p.style.height = (2 + Math.random() * 4) + 'px';
+      particlesEl.appendChild(p);
+    }
+  </script>
+
+</body>
+
+</html>
