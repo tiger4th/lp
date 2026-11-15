@@ -34,7 +34,8 @@
   .hero-area-2 .contents {
     text-align: center;
   }
-  .hero-area-2 .contents p {
+  .hero-area-2 .contents p,
+  .hero-area-2 .contents .head-sub {
     font-size: 24px;
   }
   .navbar-expand-md .navbar-nav .nav-link {
@@ -338,7 +339,8 @@
     /* line-height: 30px; */
     text-align: center;
   }
-  .hero-area-2 .contents p {
+  .hero-area-2 .contents p,
+  .hero-area-2 .contents .head-sub {
     font-size: 24px;
     text-align: center;
   }
