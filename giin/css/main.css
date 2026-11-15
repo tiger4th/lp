@@ -2072,17 +2072,30 @@ textarea {
   border: 1px solid #8C52FF;
 }
 
-#contact .contact-title {
+#contact .contact-title,
+#contact2 .contact-title {
   color: #8C52FF;
   font-size: 24px !important;
 }
 
-#contact2 .contact-block {
-  padding: 0 8px !important;
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #8C52FF;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-#contact2 .formrun-embed {
-  width: 360px;
+.btn-contact:hover {
+  color: #fff;
+  background-color: #7339e6;
+  box-shadow: 0 4px 12px rgba(140, 82, 255, 0.3);
 }
 
 .offset-top {
