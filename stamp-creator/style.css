@@ -86,6 +86,16 @@ button {
 }
 
 /* Typography */
+.nowrap {
+    white-space: nowrap;
+}
+
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+}
+
 .hero-eyebrow {
     font-size: 1rem;
     font-weight: 600;
@@ -240,6 +250,21 @@ p {
         padding: 0.75rem 1.25rem;
         font-size: 1rem;
     }
+
+    .hero-title {
+        font-size: 1.5625rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text {
+        font-size: 0.96875rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.7;
+    }
+
+    .hero-actions {
+        margin-bottom: 1.25rem;
+    }
 }
 
 .nav {
@@ -269,10 +294,17 @@ p {
 
     .hero {
         overflow: hidden;
+        padding-top: 100px;
+        padding-bottom: 3rem;
+    }
+
+    .hero .container {
+        gap: 2rem;
     }
 
     .hero-visual {
         overflow: hidden;
+        padding: 0.5rem 0;
     }
 
     .hero-visual-img {
@@ -456,7 +488,7 @@ p {
 }
 
 .icon-box.primary {
-    background-color: #eff6ff;
+    background-color: rgba(91, 33, 182, 0.08);
     color: var(--primary-color);
 }
 
@@ -468,11 +500,20 @@ p {
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
+    gap: 1.75rem;
 }
 
 .feature-card {
-    padding: 1.5rem;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
 .feature-card h3 {
@@ -482,6 +523,7 @@ p {
 .feature-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
+    margin-bottom: 0;
 }
 
 /* Pricing Section */
@@ -790,10 +832,10 @@ p {
 }
 
 .cta-box {
-    background: white;
-    border: 1px solid var(--border-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg);
     padding: 3rem 2rem;
     text-align: center;
     max-width: 800px;
@@ -803,11 +845,23 @@ p {
 .cta-box h2 {
     font-size: 1.75rem;
     margin-bottom: 0.75rem;
+    color: white;
 }
 
 .cta-box p {
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2rem;
+}
+
+.cta-box .btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.cta-box .btn-primary:hover {
+    background-color: var(--bg-light);
+    color: var(--primary-color);
 }
 
 @media (max-width: 480px) {
@@ -816,7 +870,7 @@ p {
     }
 
     .cta-box h2 {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
 }
 
