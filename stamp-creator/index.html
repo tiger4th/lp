@@ -36,7 +36,7 @@
       "name": "Stamp Creator",
       "url": "https://tiger4th.com/lp/stamp-creator/",
       "downloadUrl": "https://tiger4th.booth.pm/items/7963021",
-      "operatingSystem": "Windows 10/11, macOS 11.0+ (Apple Silicon)",
+      "operatingSystem": "Windows 10/11 (64bit), macOS 11.0+ (Apple Silicon)",
       "applicationCategory": "DesignApplication",
       "applicationSubCategory": "LINEスタンプ作成支援ツール",
       "inLanguage": "ja",
@@ -63,18 +63,19 @@
           "url": "https://tiger4th.booth.pm/items/7963021"
         }
       ],
-      "description": "LINEスタンプ申請に必要な画像をドラッグ＆ドロップで一括生成。AI背景透過、370×320px自動リサイズ、余白調整、キャラシート分割、連番ZIP書き出し機能を搭載したクリエイター向け超時短ツール。",
+      "description": "LINEスタンプ申請に必要な画像をドラッグ＆ドロップで一括生成。PC内完結のAI背景透過、370×320px自動リサイズ、余白調整、キャラシート分割、連番ZIP書き出し機能を搭載したクリエイター向け超時短ツール。",
       "image": "https://tiger4th.com/lp/stamp-creator/assets/hero-visual.png",
       "screenshot": "https://tiger4th.com/lp/stamp-creator/assets/hero-visual.png",
       "featureList": [
-        "ドラッグ＆ドロップでの一括処理",
+        "ドラッグ＆ドロップでの一括処理（元画像を上書きしない別名保存）",
         "LINEスタンプ規定サイズ（370×320px）と推奨余白（10px）への自動リサイズ・トリミング",
-        "AI背景透過",
-        "キャラシート自動分割",
+        "完全ローカル処理のAI背景透過（透過済み自動スキップ・ON/OFF切り替え対応）",
+        "キャラシート自動分割（ON/OFF切り替え対応）",
         "PNG・72dpi・RGB・1MB以下へのフォーマット自動補正",
         "LINEトーク画面風リアルタイムプレビュー",
-        "メイン画像・タブ画像のワンクリック生成",
-        "連番リネーム（01.png〜）とZIP書き出し"
+        "メイン画像（240×240px）・タブ画像（96×74px）のワンクリック生成",
+        "並び替え・連番リネーム（01.png〜、main.png、tab.png）とZIP書き出し",
+        "ライト／ダークモードおよび日本語／英語表示対応"
       ]
     }
     </script>
@@ -106,7 +107,7 @@
           "name": "対応しているOS・動作環境は？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Windows 10 / 11 および macOS 11.0+（Apple Silicon）に対応しています。"
+            "text": "Windows 10 / 11（64bit）および macOS 11.0+（Apple Silicon：M1以降）に対応しています。Intel Macには対応していません。"
           }
         },
         {
@@ -130,7 +131,7 @@
           "name": "背景透過の精度を上げるコツは？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "イラストと背景の色が近い場合は精度が落ちることがあります。うまくいかない場合、事前に色の濃さやコントラストを調整すると改善する可能性があります。白一色の背景が最も透過しやすいです。"
+            "text": "イラストと背景の色が近い場合は精度が落ちることがあります。白一色の背景が最も透過しやすいです。Pro版では「背景の透明度の調整」で輪郭や細部の残り具合を微調整して再処理できます。すでに透過済みの画像は自動でスキップされます。"
           }
         },
         {
@@ -139,6 +140,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "イラストが均等に配置されていない場合などに、精度が落ちることがあります。また背景は白一色で、イラスト同士の間に十分な間隔を取って均等に並んでいる画像が最も分割しやすいです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "画像は外部サーバーに送信されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。AI背景透過を含むすべての処理はお使いのPC内で完結（オフライン動作）するため、イラストが外部サーバーへ送信・学習されることはありません。元画像も上書きされず別名で保存されます。"
           }
         }
       ]
@@ -212,7 +221,7 @@
                         </a>
                     </div>
                     <div class="hero-requirements">
-                        <span><i data-lucide="monitor" aria-hidden="true"></i> Windows 10/11</span>
+                        <span><i data-lucide="monitor" aria-hidden="true"></i> Windows 10/11 (64bit)</span>
                         <span><i data-lucide="apple" aria-hidden="true"></i> macOS 11.0+ (Apple Silicon)</span>
                     </div>
                 </div>
@@ -272,7 +281,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Stamp Creatorがすべて解決します</h2>
-                    <p>クリエイターの作業時間を大幅に短縮する、強力な機能を搭載。</p>
+                    <p>クリエイターの作業時間を大幅に短縮。ダークモードや日英表示切り替えにも対応しています。</p>
                 </div>
 
                 <div class="feature-grid">
@@ -281,7 +290,7 @@
                             <i data-lucide="mouse-pointer-2"></i>
                         </div>
                         <h3>ドラッグ＆ドロップで一括処理</h3>
-                        <p>フォルダごと放り込むだけ。<br>大量の画像も自動でリストに追加されます。</p>
+                        <p>画像やフォルダを放り込むだけ。元画像は上書きせず別名保存されるため安心です。</p>
                     </div>
                     <div class="feature-card">
                         <div class="icon-box primary">
@@ -295,14 +304,14 @@
                             <i data-lucide="wand-2"></i>
                         </div>
                         <h3>AI背景透過</h3>
-                        <p>高性能AIが背景を自動削除。<br>白背景のイラストなら特に高精度に切り抜きます。</p>
+                        <p>PC内完結のローカルAIが背景を自動削除。透過済み画像の自動スキップやON/OFF切替にも対応。</p>
                     </div>
                     <div class="feature-card">
                         <div class="icon-box primary">
                             <i data-lucide="grid-3x3"></i>
                         </div>
                         <h3>キャラシート自動分割</h3>
-                        <p>AI生成やスプライトシートなど、1枚に複数キャラがいる画像を自動で分割して個別に処理します。</p>
+                        <p>1枚に複数キャラがいる画像を格子状に自動分割。不要時は設定でOFFにもできます。</p>
                     </div>
                     <div class="feature-card">
                         <div class="icon-box primary">
@@ -323,14 +332,14 @@
                             <i data-lucide="image-plus"></i>
                         </div>
                         <h3>メイン・タブ画像生成</h3>
-                        <p>申請に必須のメイン画像・タブ画像も、既存のスタンプからワンクリックで生成。</p>
+                        <p>申請に必須のメイン画像（240×240px）・タブ画像（96×74px）もワンクリックで生成。</p>
                     </div>
                     <div class="feature-card">
                         <div class="icon-box primary">
                             <i data-lucide="file-archive" aria-hidden="true"></i>
                         </div>
                         <h3>ZIP書き出し</h3>
-                        <p>規定の連番ファイル名（01.png...）でリネームし、ZIPにまとめて出力。そのまま申請へ。</p>
+                        <p>ドラッグで並び替え・選択し、規定名（01.png〜 / main.png / tab.png）でZIP出力。</p>
                     </div>
                 </div>
             </div>
@@ -357,7 +366,7 @@
                     <li class="step-card">
                         <div class="step-number">STEP 3</div>
                         <h3>メイン・タブ生成＆ZIP出力</h3>
-                        <p>申請に必須のメイン画像・タブ画像をワンクリックで生成し、規定の連番ファイル名（01.png〜）でZIP書き出し。そのまま申請できます。</p>
+                        <p>メイン・タブ画像をワンクリックで生成し、順番を並び替えて規定名（01.png〜 / main.png / tab.png）でZIP書き出し。そのまま申請できます。</p>
                     </li>
                 </ol>
             </div>
@@ -378,13 +387,13 @@
                     </div>
                     <div class="spec-item">
                         <h3>メイン・タブ画像</h3>
-                        <p class="spec-value">ワンクリック自動生成</p>
-                        <p class="spec-desc">申請に必須のメイン画像・トークルームタブ画像も既存スタンプから即作成。</p>
+                        <p class="spec-value">240×240 / 96×74 px</p>
+                        <p class="spec-desc">申請に必須のメイン画像（240×240px）・タブ画像（96×74px）もワンクリックで生成。</p>
                     </div>
                     <div class="spec-item">
                         <h3>出力フォーマット</h3>
                         <p class="spec-value">PNG / 72dpi / RGB / 1MB以下</p>
-                        <p class="spec-desc">カラーモード変換やファイル容量圧縮、連番リネーム（01.png〜）まで全自動。</p>
+                        <p class="spec-desc">カラーモード変換、1MB以下の圧縮、規定名リネーム（01.png〜 / main.png / tab.png）まで全自動。</p>
                     </div>
                     <div class="spec-item">
                         <h3>入力対応画像形式</h3>
@@ -469,7 +478,7 @@
                             <i data-lucide="chevron-down" aria-hidden="true"></i>
                         </button>
                         <div class="accordion-body" id="faq-answer-3" role="region" aria-labelledby="faq-q-3">
-                            <p>Windows 10 / 11 および macOS 11.0+（Apple Silicon）に対応しています。</p>
+                            <p>Windows 10 / 11（64bit）および macOS 11.0+（Apple Silicon：M1以降）に対応しています。Intel Macには対応していません。</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -496,8 +505,7 @@
                             <i data-lucide="chevron-down" aria-hidden="true"></i>
                         </button>
                         <div class="accordion-body" id="faq-answer-6" role="region" aria-labelledby="faq-q-6">
-                            <p>イラストと背景の色が近い場合は精度が落ちることがあります。うまくいかない場合、事前に色の濃さやコントラストを調整すると改善する可能性があります。白一色の背景が最も透過しやすいです。
-                            </p>
+                            <p>イラストと背景の色が近い場合は精度が落ちることがあります。白一色の背景が最も透過しやすいです。Pro版では「背景の透明度の調整」で輪郭や細部の残り具合を微調整して再処理できます。すでに透過済みの画像は自動でスキップされます。</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -506,8 +514,16 @@
                             <i data-lucide="chevron-down" aria-hidden="true"></i>
                         </button>
                         <div class="accordion-body" id="faq-answer-7" role="region" aria-labelledby="faq-q-7">
-                            <p>イラストが均等に配置されていない場合などに、精度が落ちることがあります。また背景は白一色で、イラスト同士の間に十分な間隔を取って均等に並んでいる画像が最も分割しやすいです。
-                            </p>
+                            <p>イラストが均等に配置されていない場合などに、精度が落ちることがあります。また背景は白一色で、イラスト同士の間に十分な間隔を取って均等に並んでいる画像が最も分割しやすいです。</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button type="button" class="accordion-header" aria-expanded="false" aria-controls="faq-answer-8" id="faq-q-8">
+                            画像は外部サーバーに送信されますか？
+                            <i data-lucide="chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="accordion-body" id="faq-answer-8" role="region" aria-labelledby="faq-q-8">
+                            <p>いいえ。AI背景透過を含むすべての処理はお使いのPC内で完結（オフライン動作）するため、イラストが外部サーバーへ送信・学習されることはありません。元画像も上書きされず別名で保存されます。</p>
                         </div>
                     </div>
                 </div>
