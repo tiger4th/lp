@@ -86,10 +86,27 @@ button {
 }
 
 /* Typography */
+.nowrap {
+    white-space: nowrap;
+}
+
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+}
+
+.hero-eyebrow {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
 .hero-title {
-    font-size: 2.5rem;
+    font-size: clamp(1.875rem, 3.2vw, 2.5rem);
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.25;
     margin-bottom: 1.5rem;
     letter-spacing: -0.025em;
     background: linear-gradient(to right, var(--primary-color), var(--primary-light));
@@ -124,6 +141,8 @@ p {
     border-radius: var(--radius-md);
     transition: all 0.2s;
     font-size: 0.9375rem;
+    max-width: 100%;
+    text-align: center;
 }
 
 .btn-primary {
@@ -177,6 +196,12 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.75rem;
+}
+
+.header .btn {
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .logo {
@@ -186,9 +211,11 @@ p {
     font-weight: 700;
     font-size: 1.25rem;
     color: var(--text-color);
+    white-space: nowrap;
 }
 
-.logo h1 {
+.logo h1,
+.logo .logo-text {
     font-size: inherit;
     font-weight: inherit;
     margin: 0;
@@ -200,6 +227,44 @@ p {
     width: 32px;
     height: 32px;
     border-radius: 6px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        gap: 0.5rem;
+        font-size: 1.0625rem;
+    }
+
+    .logo img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .header .btn {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-lg {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.5625rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text {
+        font-size: 0.96875rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.7;
+    }
+
+    .hero-actions {
+        margin-bottom: 1.25rem;
+    }
 }
 
 .nav {
@@ -229,10 +294,17 @@ p {
 
     .hero {
         overflow: hidden;
+        padding-top: 100px;
+        padding-bottom: 3rem;
+    }
+
+    .hero .container {
+        gap: 2rem;
     }
 
     .hero-visual {
         overflow: hidden;
+        padding: 0.5rem 0;
     }
 
     .hero-visual-img {
@@ -416,7 +488,7 @@ p {
 }
 
 .icon-box.primary {
-    background-color: #eff6ff;
+    background-color: rgba(91, 33, 182, 0.08);
     color: var(--primary-color);
 }
 
@@ -428,11 +500,20 @@ p {
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
+    gap: 1.75rem;
 }
 
 .feature-card {
-    padding: 1.5rem;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
 .feature-card h3 {
@@ -442,6 +523,7 @@ p {
 .feature-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
+    margin-bottom: 0;
 }
 
 /* Pricing Section */
@@ -629,9 +711,14 @@ p {
     height: 32px;
 }
 
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+}
+
 .footer-links a {
     color: #9ca3af;
-    margin-left: 2rem;
 }
 
 .footer-links a:hover {
@@ -648,4 +735,148 @@ p {
 
 .sharethis-inline-share-buttons {
     margin-bottom: 2rem;
+}
+
+/* How-to Section */
+.how-to {
+    padding: 5rem 0;
+    background-color: var(--bg-light);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    list-style: none;
+}
+
+.step-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.step-number {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--primary-color);
+    background-color: rgba(91, 33, 182, 0.08);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 1rem;
+}
+
+.step-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.step-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Specs Section */
+.specs {
+    padding: 5rem 0;
+    background-color: var(--bg-color);
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.spec-item {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+}
+
+.spec-item h3 {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.spec-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.spec-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* Bottom CTA Section */
+.cta-section {
+    padding: 4rem 0 5rem;
+    background-color: var(--bg-light);
+}
+
+.cta-box {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-box h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.cta-box p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+
+.cta-box .btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.cta-box .btn-primary:hover {
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+    .cta-box {
+        padding: 2.25rem 1.25rem;
+    }
+
+    .cta-box h2 {
+        font-size: 1.375rem;
+    }
+}
+
+/* Accessibility Focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
 }

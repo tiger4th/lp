@@ -1,17 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Lucide icons (loaded with defer)
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+        window.lucide.createIcons();
+    }
+
     // Accordion functionality
     const accordionHeaders = document.querySelectorAll('.accordion-header');
 
     accordionHeaders.forEach(header => {
         header.addEventListener('click', () => {
             const body = header.nextElementSibling;
-            const icon = header.querySelector('i');
 
             // Toggle active class on header
-            header.classList.toggle('active');
+            const isExpanded = header.classList.toggle('active');
+            header.setAttribute('aria-expanded', String(isExpanded));
 
             // Toggle open class on body
-            if (header.classList.contains('active')) {
+            if (isExpanded) {
                 body.style.maxHeight = body.scrollHeight + 'px';
                 body.classList.add('open');
             } else {
