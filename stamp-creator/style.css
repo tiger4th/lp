@@ -131,6 +131,8 @@ p {
     border-radius: var(--radius-md);
     transition: all 0.2s;
     font-size: 0.9375rem;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .btn-primary {
@@ -184,6 +186,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.75rem;
 }
 
 .logo {
@@ -193,6 +196,7 @@ p {
     font-weight: 700;
     font-size: 1.25rem;
     color: var(--text-color);
+    white-space: nowrap;
 }
 
 .logo h1,
@@ -208,6 +212,24 @@ p {
     width: 32px;
     height: 32px;
     border-radius: 6px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        gap: 0.5rem;
+        font-size: 1.0625rem;
+    }
+
+    .logo img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .header .btn {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.875rem;
+    }
 }
 
 .nav {
